@@ -1,0 +1,215 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'assets/css/css.css' %}" />
+    <script>
+        function getcode() {
+            var codeid = document.getElementById('code');
+            var solid = document.getElementById('solution');
+            //alert(codeid.value);
+            solid.innerHTML = codeid.value;
+
+        } 
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/hd">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cd">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pd">PYTHON</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <div class="container">
+        <!-- content -->
+
+        <p style="margin-bottom: 1.4em; font-size: 14px; padding: 0px;"></p>
+        <h4><span id="docs-internal-guid-b66738d8-7fff-01cb-ed87-1ce6c7547ed1">
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 16pt; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Types
+                        of CSS : </span></p>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">There
+                        are three types of CSS.</span></p>
+                <ol style="margin-bottom: 0px; padding-inline-start: 48px;">
+                    <li dir="ltr"
+                        style="list-style-type: decimal; font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre;"
+                        aria-level="1">
+                        <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"
+                            role="presentation"><span
+                                style="font-size: 12pt; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Inline
+                                CSS</span></p>
+                    </li>
+                    <li dir="ltr"
+                        style="list-style-type: decimal; font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre;"
+                        aria-level="1">
+                        <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"
+                            role="presentation"><span
+                                style="font-size: 12pt; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Internal
+                                CSS</span></p>
+                    </li>
+                    <li dir="ltr"
+                        style="list-style-type: decimal; font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre;"
+                        aria-level="1">
+                        <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"
+                            role="presentation"><span
+                                style="font-size: 12pt; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">External
+                                CSS</span></p>
+                    </li>
+                </ol>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 14pt; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Inline
+                        CSS</span></p>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Inline
+                        css is the css that is written inside the opening tag of the HTML element using style
+                        property.</span></p>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Syntax:</span>
+                </p>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; font-family:sa">&lt;tag
+                        style=�property:value;�&gt;content&lt;/tag&gt;</span></p>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Code:</span>
+                </p>
+                <p dir="ltr" style="line-height:1.38;text-align: center;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                            style="border:2pt solid #000000;display:inline-block;overflow:hidden;width:500px;height:243px;"><img
+                                src="https://lh6.googleusercontent.com/nxqCigzgmgTk-7xzKXLSiPe33sWXXwKEPUxusQSp3ATp7-haGhx482XYkcoRvMrjr9L4A3NbU8ush5R2-uNZRDDg0bnUPj9F2DQTZAH_KWIhJw9PuSpRV1p6Dy51zKcJDUzwHJW7"
+                                width="1046.9798657718122" height="588.2114782837104"
+                                style="margin-left:-352.3489932885906px;margin-top:-55.28899527480599px;"></span></span>
+                </p>
+                <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Output:</span>
+                </p>
+                <p dir="ltr" style="line-height:1.38;text-align: center;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                            style="border:2pt solid #000000;display:inline-block;overflow:hidden;width:516px;height:194px;"><img
+                                src="https://lh4.googleusercontent.com/sjsgdgpqc1HYlOCTNDmOljLojn3TWHPknn7kfqZnhtkI38Xrn7m7MYV38tfgtcQx-fwlcN_jgpb8lKJi_83SW6d_ZGoQPVwiD1qLWi88g7e-lDXBGTdiTVoN7cZ1fVwHSVNDTg3a"
+                                width="787.2469437652811" height="440.8342571328284"
+                                style="margin-left:0px;margin-top:-38.348540084254246px;"></span></span></p>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 14pt; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Internal
+                        CSS</span></p>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">In
+                        internal css, with the help of </span><span
+                        style="font-size: 12pt; font-family: sa">&lt;style&gt;</span><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">
+                        tag css is written in the head section of the HTML document and property defined in the internal
+                        css is applicable to the elements in the entire HTML document.</span></p>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">code</span>
+                </p>
+                <p dir="ltr" style="line-height:1.38;text-align: center;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                            style="border:2pt solid #000000;display:inline-block;overflow:hidden;width:377px;height:308px;"><img
+                                src="https://lh5.googleusercontent.com/BBalW6-1JaUmIhUzgPmKPSjH1v_Gh5aLK9xjI-qZEYJqilUrC5Yyrxj0LZZ3Sj49e20C4tU7izbKE3WewCRhoQnRHS5tx4Ub7-CVXc5MKQ43BF9BIMsR_m0zAR_dg9V8fNtrmBTa"
+                                width="904.8" height="507.7359291620729"
+                                style="margin-left:-295.8px;margin-top:-45.06395605665503px;"></span></span></p>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Output</span>
+                </p>
+                <p dir="ltr" style="line-height:1.38;text-align: center;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                            style="border:2pt solid #000000;display:inline-block;overflow:hidden;width:408px;height:251px;"><img
+                                src="https://lh6.googleusercontent.com/_1XJ9NdkMqDRp6dWIC5lLjISja8vo7PvDtLDCl0HRXZslcGMYetve5pwq14Dm5Kgi4UTGQdnNREZK5_TneC0Ok0ZBU3ub7Nfeph7-phI0kLRyzgryFTsmEAHBJhFXAy02Q5wwQkA"
+                                width="733.6945244956772" height="411.06188932205487"
+                                style="margin-left:0px;margin-top:-31.239075004601773px;"></span></span></p>
+
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Note:</span>
+                </p>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">In
+                        inline css , property once defined in the style tag can be reused for all&nbsp; &lt;p&gt; tag in
+                        the entire HTML document.</span></p> <br>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 14pt; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">External
+                        CSS</span></p>
+                <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                        style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">In
+                        External CSS&nbsp; a .css file is created&nbsp; in the project directory and is linked to the
+                        HTML document with the help of
+                        &nbsp; </span>
+                    style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent;
+                    font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;
+                    white-space: pre-wrap;">
+                    tag.
+            </span></p>
+            <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                    style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">External
+                    css file</span><span
+                    style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">.</span>
+            </p>
+            <p dir="ltr" style="line-height:1.38;text-align: center;margin-top:0pt;margin-bottom:0pt;"><span
+                    style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                        style="border:2pt solid #000000;display:inline-block;overflow:hidden;width:345px;height:280px;"><img
+                            src="https://lh3.googleusercontent.com/SHgFVH1unzSusqPYpVXWe_08sx2LptfxcIvz6rYRAQZ88e2c5_FsVYs0VxWPUZ0qY38BM4eFCtDlczXe2xhdqnbc-Mt8ePRWhkad-FdCdFwJqqX064GTz75zoaOwxY9JfnaAgX1K"
+                            width="952.5663716814158" height="534.0696697849979"
+                            style="margin-left:-270.1991150442478px;margin-top:-19.253400809114336px;"></span></span>
+            </p>
+            <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span
+                    style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Html
+                    file.</span></p>
+            <p dir="ltr" style="line-height:1.38;text-align: center;margin-top:0pt;margin-bottom:0pt;"><span
+                    style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                        style="border:2pt solid #000000;display:inline-block;overflow:hidden;width:361px;height:248px;"><img
+                            src="https://lh4.googleusercontent.com/qx5ux6r8Iz7e7QEBXmqJDNdMF_8flvxEVXYVqAMsjkGsagHbwW2x3AFxQARUQEWssMBnoTiLDFJfC3G_e-Ud1sVgXKpLIj_hnnX12Mn_sef2S6sSsOHWVsf15gW9mVro6MMLiztX"
+                            width="750.88" height="421.5697766147953"
+                            style="margin-left:-209.38px;margin-top:-18.63387580764827px;"></span></span></p>
+            <br>
+            <p dir="ltr" style="line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;"><span
+                    style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">In
+                    the above link tag , in the href=�� attribute you need to mention the relative path of thestyle.css
+                    file in which css for the paragraph tag is defined. If it is not linked properly then CSS defined in
+                    the style.css will not be reflected.</span></p>
+            <div><span
+                    style="font-size: 12pt; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><br></span>
+            </div>
+            </span>
+        </h4>
+        <p></p> <!-- end of content -->
+    </div>
+    <div class="container">
+        <h1>
+            <marquee style="color:red;">TRY HERE</marquee>
+        </h1>
+        <button onclick="getcode()">RUN</button>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-6">
+                <textarea id="code" rows="20" cols="70" placeholder="Enter Html code here"></textarea>
+            </div>
+
+            <div class="col-md-6" id="solution"
+                style="background-color: aliceblue; border-radius: 2%; border-color: black;">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

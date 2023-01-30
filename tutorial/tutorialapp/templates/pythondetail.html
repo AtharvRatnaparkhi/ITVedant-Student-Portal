@@ -1,0 +1,241 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'assets/css/as.css' %}" />
+        <title>Document</title>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                        <a class="navbar-brand" href="/">HOME</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="/hd">HTML</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="/cd">CSS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="/pd">PYTHON</a>
+                                        </li>
+                                </ul>
+                        </div>
+        </nav><br>
+        <div class="container">
+                <!-- content -->
+                <p dir="ltr"
+                        style="line-height:1.656;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 3pt 0pt;">
+                        <span
+                                style="font-size:13.999999999999998pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&nbsp;Loops</span>
+                </p>
+                <h2 dir="ltr"
+                        style="line-height:1.656;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:15pt 0pt 6pt 0pt;">
+                        <span
+                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">What
+                                are loops and their uses ?</span>
+                </h2>
+                <p dir="ltr" style="line-height:1.656;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span
+                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">A
+                                loop is repeated execution of code again. Eg. Walking, Drinking water, Fan
+                                Rotation</span><span
+                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">
+                        </span><span
+                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&nbsp;</span>
+                </p>
+                <ul style="margin-top:0;margin-bottom:0;">
+                        <li dir="ltr"
+                                style="list-style-type:disc;font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;">
+                                <p dir="ltr"
+                                        style="line-height:1.38;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"
+                                        role="presentation"><span
+                                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Every
+                                                loop has start and an end to break the continuation of step.</span></p>
+                        </li>
+                        <li dir="ltr"
+                                style="list-style-type:disc;font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;">
+                                <p dir="ltr"
+                                        style="line-height:1.38;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"
+                                        role="presentation"><span
+                                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">What
+                                                stops the loop at end is known as its condition Eg. Arriving at the
+                                                destination while walking or when the glass is empty else thirst is
+                                                quenched we stop drinking.</span></p>
+                        </li>
+                        <li dir="ltr"
+                                style="list-style-type:disc;font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;">
+                                <p dir="ltr"
+                                        style="line-height:1.38;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"
+                                        role="presentation"><span
+                                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">There
+                                                are two loops in python: for and while.</span></p>
+                                <p dir="ltr"
+                                        style="line-height:1.38;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"
+                                        role="presentation"><span
+                                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><br></span><span
+                                                style="background-color: transparent; font-size: 12pt; letter-spacing: -0.015em; font-family: Tomorrow, sans-serif; white-space: pre-wrap;">The
+                                                range generates a sequence of numbers.</span></p>
+                                <p dir="ltr"
+                                        style="line-height:1.38;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"
+                                        role="presentation"><span
+                                                style="background-color: transparent; font-size: 12pt; letter-spacing: -0.015em; font-family: Tomorrow, sans-serif; white-space: pre-wrap;"><br></span><span
+                                                style="background-color: transparent; font-family: Tomorrow, sans-serif; font-size: 12pt; white-space: pre-wrap; letter-spacing: -0.015em;">Syntax:</span><span
+                                                style="background-color: transparent; font-family: Tomorrow, sans-serif; font-size: 12pt; white-space: pre-wrap; letter-spacing: -0.015em;">range(start,
+                                                stop , step )</span></p>
+                        </li>
+                </ul>
+                <h2 dir="ltr"
+                        style="line-height:1.656;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:12pt 0pt 6pt 0pt;">
+                        <span
+                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Example:</span>
+                </h2>
+                <p dir="ltr" style="line-height:1.656;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span
+                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><span
+                                        class="Apple-tab-span" style="white-space:pre;"> </span></span><img
+                                src="https://lh4.googleusercontent.com/8rMfKdKFkE4Un3zMkCwGMfn0o-58yTdKT9Me6WMrqjASxepk6ESUWI4yYgIWlXxNhpSveuhvayCIgw006qoXyv4w6Fcs0KPUtd-1X_2vTtEQ-WoDzPAP4QQPlcmoDPIDUXuvDziF=s0"
+                                width="624" height="269"
+                                style="background-color: transparent; color: rgb(39, 50, 57); font-size: 13pt; white-space: pre-wrap; margin-left: 0px; margin-top: 0px;">
+                </p>
+                <h2 dir="ltr"
+                        style="line-height:1.656;background-color:#ffffff;margin-top:18pt;margin-bottom:0pt;padding:0pt 0pt 6pt 0pt;">
+                        <span
+                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">For
+                                Loop</span>
+                </h2>
+                <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span
+                                id="docs-internal-guid-45e60317-7fff-53eb-eb97-b4d90864d8ac"><span
+                                        style="font-size: 13pt; color: rgb(39, 50, 57); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                                                style="border:none;display:inline-block;overflow:hidden;width:624px;height:183px;"><img
+                                                        src="https://lh5.googleusercontent.com/17zWSR43HQ1xAv6ogI4fPq8uq-bCP84jxEhwDBhpZt_32IeBD2s-XHVLqt7i1niQI74BnaWhBTUM33l3dRhXumrGnN426M-apeTWqsVzOrYcmj4YBzMctfF_B9_eDGSNoCtReex7=s0"
+                                                        width="624" height="183"
+                                                        style="margin-left:0px;margin-top:0px;"></span></span></span><br>
+                </p>
+
+                <h2 dir="ltr"
+                        style="line-height:1.656;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:10pt 0pt 6pt 0pt;">
+                        <span style="font-size: 13px;">&nbsp;</span><span
+                                style="background-color: transparent; color: rgb(39, 50, 57); font-size: 13pt; white-space: pre-wrap;">Code:</span><br>
+                </h2><span id="docs-internal-guid-6bfe15a8-7fff-26cb-4fe5-3be4e03bc2db">
+                        <p dir="ltr"
+                                style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 15pt;">
+                                <span
+                                        style="font-size: 13pt; color: rgb(39, 50, 57); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                                                style="border:none;display:inline-block;overflow:hidden;width:624px;height:175px;"><img
+                                                        src="https://lh5.googleusercontent.com/6AfVGXsHpYdEYe0Q81Xu64q4S3aMz17Y577M792bH7B5F620LsDcGM7wllMrYIKx-VyAMyhuFIEsvDSVfV-PcsVufqIoDGJbPddxXJq5P8dxWl1l7oRcYXqkSjZp3zwlPdhSVeO1=s0"
+                                                        width="624" height="175"
+                                                        style="margin-left:0px;margin-top:0px;"></span></span>
+                        </p>
+                        <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 15pt;">&nbsp;<span
+                                        style="background-color: transparent; color: rgb(39, 50, 57); font-size: 13pt; white-space: pre-wrap;">Output:</span>
+                        </p>
+                </span><span id="docs-internal-guid-81d9e6b3-7fff-c5e6-0507-0e668923fede">
+                        <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 15pt;"><span
+                                        style="font-size: 13pt; color: rgb(39, 50, 57); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                                                style="border:none;display:inline-block;overflow:hidden;width:624px;height:180px;"><img
+                                                        src="https://lh4.googleusercontent.com/051yZdMDfTyj7RFalqND9JQDDt1nThVrTFpcdG1n-DVY97kgEdpINv3cEG5F2iawdF7iXf20nSFXH9crLn0t7ZwcH6fBGB7IAzwYZ_ZWUE3JnX6qT3xRbQMVTkASvn1mqiFgNPaj=s0"
+                                                        width="624" height="180"
+                                                        style="margin-left:0px;margin-top:0px;"></span></span></p>
+                        <div><span
+                                        style="background-color: transparent; color: rgb(0, 0, 0); font-size: 12pt; white-space: pre-wrap; letter-spacing: -0.015em;">Example
+                                        2:</span></div>
+                </span>
+                <p dir="ltr" style="line-height:1.656;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><img
+                                src="data:image/png;base64,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"
+                                alt=""><br></p>
+                <p dir="ltr"
+                        style="line-height:1.38;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 8pt 0pt;">
+                        &nbsp;</p>
+                <p dir="ltr" style="line-height:1.656;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span
+                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Print
+                                the following using for:</span></p>
+                <p dir="ltr" style="line-height:1.656;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;"><span
+                                style="font-size:12pt;font-family:Tomorrow,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Factorial
+                                of a number</span></p>
+                <div dir="ltr" style="margin-left:0pt;" align="left"><span
+                                id="docs-internal-guid-a1f29b68-7fff-f1e0-93f6-75c90b04daba">
+                                <p dir="ltr"
+                                        style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 15pt;">
+                                        <span
+                                                style="font-size: 13pt; color: rgb(39, 50, 57); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Code:</span>
+                                </p>
+                                <p dir="ltr"
+                                        style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 15pt;">
+                                        <span
+                                                style="font-size: 13pt; color: rgb(39, 50, 57); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                                                        style="border:none;display:inline-block;overflow:hidden;width:624px;height:189px;"><img
+                                                                src="https://lh5.googleusercontent.com/-mLtOUiA848wIZ-sXJnAWXr40S9BZHl8IVY0CxotQatwI9QkuyaCqG4VKC2tMEO12rzNkycIRWsITFYBHzaVCZbVv1TC0OTP5Uo7OhmulUVp4-swi8jnMHmNL-z_5aTnusdb6W9u=s0"
+                                                                width="624" height="189"
+                                                                style="margin-left:0px;margin-top:0px;"></span></span>
+                                </p>
+                                <p dir="ltr"
+                                        style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 15pt;">
+                                        <span
+                                                style="font-size: 13pt; color: rgb(39, 50, 57); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Output:</span>
+                                </p>
+                                <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 15pt;"><span
+                                                style="font-size: 13pt; color: rgb(39, 50, 57); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                                                        style="border:none;display:inline-block;overflow:hidden;width:624px;height:69px;"><img
+                                                                src="https://lh5.googleusercontent.com/jZdJVT2Srq-veoMTlkHth91K8_-bKqZOzzDo1NTg-qD2T3bIADeeZqvu8OhIV58xVyifWDoVPHkeFOD6TaVXhmVZx0ny_Orr2RhpzmIy8O2SCPF_dUa6T4FH6flo_FxtWb79-BC1=s0"
+                                                                width="624" height="69"
+                                                                style="margin-left:0px;margin-top:0px;"></span></span>
+                                </p>
+                                <div><span
+                                                style="background-color: transparent; color: rgb(0, 0, 0); font-size: 12pt; font-weight: 700; white-space: pre-wrap;">Fibonacci
+                                                Series: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34</span><br></div>
+                        </span></div>
+                <div dir="ltr" style="margin-left:0pt;" align="left"></div><span
+                        id="docs-internal-guid-bda535b0-7fff-0eed-ba47-6c24fd1c0cbc">
+                        <p dir="ltr"
+                                style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 15pt;">
+                                <span
+                                        style="font-size: 13pt; color: rgb(39, 50, 57); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Code:</span>
+                        </p>
+                        <p dir="ltr"
+                                style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 15pt;">
+                                <span
+                                        style="font-size: 13pt; color: rgb(39, 50, 57); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                                                style="border:none;display:inline-block;overflow:hidden;width:624px;height:223px;"><img
+                                                        src="https://lh4.googleusercontent.com/t1lXZM85R1o1rc5xmBpM01hPwHaS0HPvAlEBJFdnZ1kMrp_TFIkrjsG1YNqUC-_lpgeiJ3nbJjyYfZn2o7YxeVNYcEfBa5ZUKz7-2Vs3q0KKnx1Cx_XgMxXnk3Z34s7rnhNFEkmv=s0"
+                                                        width="624" height="223"
+                                                        style="margin-left:0px;margin-top:0px;"></span></span>
+                        </p>
+                        <p dir="ltr"
+                                style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 15pt;">
+                                <span
+                                        style="font-size: 13pt; color: rgb(39, 50, 57); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Output:</span>
+                        </p>
+                        <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 15pt;"><span
+                                        style="font-size: 13pt; color: rgb(39, 50, 57); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><span
+                                                style="border:none;display:inline-block;overflow:hidden;width:624px;height:72px;"><img
+                                                        src="https://lh3.googleusercontent.com/_ZAy37_Ny1YR0Xqeg49NKwyEMsNWfGvHZFfWzLWKUS8OXRgV-U3iufNl1i6mPvZIDPTWie8CBhDHcBrrPTjwOnadYu8ZwgPHaQ1TB3LJAGyBHcflPvVgX397NwT-8O-2nrPDdvmD=s0"
+                                                        width="624" height="72"
+                                                        style="margin-left:0px;margin-top:0px;"></span></span></p>
+                </span>
+                <p dir="ltr"
+                        style="line-height:1.38;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 8pt 0pt;">
+                        &nbsp;</p> <!-- end of content -->
+        </div>
+        <div class="container">
+                <div data-pym-src='https://www.jdoodle.com/plugin' data-language="python3" data-version-index="4"
+                        data-libs="">
+                </div>
+
+                <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+        </div>
+</body>
+
+</html>

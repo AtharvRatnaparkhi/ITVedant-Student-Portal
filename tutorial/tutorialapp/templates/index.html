@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="{% static 'assets/css/both.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/home.css' %}" />
+  <style>
+    .pad-16 i {
+      font-weight: inherit;
+    }
+
+    .navhome .right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navhome .right i {
+      font-weight: 900;
+
+      margin-left: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="top">
+      <a href="" class="logo">ItVedant<span class="dotcom">.com</span></a>
+      <p style="background-color: greenyellow;">IT Vedant</p>
+    </div>
+    <nav class="navbar navhome">
+      <div class="left">
+      </div>
+      <div class="right">
+        <!--  <i class="bi bi-search fa-3x"></i>
+          <i class="bi bi-search"></i>   -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="leftnav">
+        <div class="title" style="background-color: yellowgreen;">HTML</div>
+        <a href="/hd">Learn HTML</a>
+
+        <div class="title"style="background-color: yellowgreen;">CSS</div>
+        <a href="/cd">Learn CSS</a>
+
+        <div class="title"style="background-color: yellowgreen;">PYTHON</div>
+        <a href="/pd">Learn PYTHON</a>
+
+        <div class="title"style="background-color: yellowgreen;"></div>
+      </div>
+      <div class="rightdit">
+        <div class="white one">
+          <div class="course">
+            <p class="course_title" style="background-color: greenyellow;">HTML</p>
+            <p class="lang">The language for building web pages</p>
+            <div class="btn">
+              <a href="/hd"><button>LEARN HTML</button></a>
+            </div>
+          </div>
+          <div class="example">
+            <h4>HTML Example:</h4>
+            <div class="border-green" id="detail">
+              <span style="color: brown"><span style="color: mediumblue">&lt;</span>!DOCTYPE<span style="color: red">
+                  html</span><span style="color: mediumblue">&gt;</span></span><br />
+              <span style="color: brown"><span style="color: mediumblue">&lt;</span>html<span
+                  style="color: mediumblue">&gt;</span></span><br />
+              <span style="color: brown"><span style="color: mediumblue">&lt;</span>title<span
+                  style="color: mediumblue">&gt;</span></span>HTML Tutorial<span style="color: brown"><span
+                  style="color: mediumblue">&lt;</span>/title<span style="color: mediumblue">&gt;</span></span><br />
+              <span style="color: brown"><span style="color: mediumblue">&lt;</span>body<span
+                  style="color: mediumblue">&gt;</span></span><br /><br />
+              <span style="color: brown"><span style="color: mediumblue">&lt;</span>h1<span
+                  style="color: mediumblue">&gt;</span></span>This is a heading<span style="color: brown"><span
+                  style="color: mediumblue">&lt;</span>/h1<span style="color: mediumblue">&gt;</span></span><br />
+              <span style="color: brown"><span style="color: mediumblue">&lt;</span>p<span
+                  style="color: mediumblue">&gt;</span></span>This is a paragraph.<span style="color: brown"><span
+                  style="color: mediumblue">&lt;</span>/p<span style="color: mediumblue">&gt;</span></span><br /><br />
+              <span style="color: brown"><span style="color: mediumblue">&lt;</span>/body<span
+                  style="color: mediumblue">&gt;</span></span><br />
+              <span style="color: brown"><span style="color: mediumblue">&lt;</span>/html<span
+                  style="color: mediumblue">&gt;</span></span>
+            </div>
+            <a href="/h" role="btn"><button>Try it by Yourself</button></a>
+          </div>
+        </div>
+        <div class="gray two">
+          <div class="course">
+            <p class="course_title" style="background-color: greenyellow;">CSS</p>
+            <p class="lang">The language for styling web pages</p>
+            <div class="btn">
+              <a href="/cd"><button>LEARN CSS</button></a>
+            </div>
+          </div>
+          <div class="example" style="box-shadow: none">
+            <h4>CSS Example:</h4>
+            <div class="border-green">
+              <span style="color: brown">
+                body <span style="color: black">{</span><span style="color: red"><br />
+                  &nbsp;&nbsp;&nbsp; background-color<span style="color: mediumblue"><span style="color: black">:</span>
+                    lightblue<span style="color: black">;</span></span><br /></span><span
+                  style="color: black">}</span><br />
+                h1 <span style="color: black">{</span><span style="color: red"><br />
+                  &nbsp;&nbsp;&nbsp; color<span style="color: mediumblue"><span style="color: black">:</span> white<span
+                      style="color: black">;</span></span><br />
+                  &nbsp;&nbsp;&nbsp; text-align<span style="color: mediumblue"><span style="color: black">:</span>
+                    center<span style="color: black">;</span></span><br /></span><span
+                  style="color: black">}</span><br />
+                p <span style="color: black">{</span><span style="color: red"><br />
+                  &nbsp;&nbsp;&nbsp; font-family<span style="color: mediumblue"><span style="color: black">:</span>
+                    verdana<span style="color: black">;</span></span><br />
+                  &nbsp;&nbsp;&nbsp; font-size<span style="color: mediumblue"><span style="color: black">:</span>
+                    20px<span style="color: black">;</span></span><br /></span><span style="color: black">}</span>
+              </span>
+            </div>
+            <a href="/c" role="btn"><button>Try it by Yourself</button></a>
+          </div>
+        </div>
+        <div class="white three">
+          <div class="course">
+            <p class="course_title" style="background-color: greenyellow;">PYTHON</p>
+            <p class="lang" style="text-align: center">
+              A popular programming language
+            </p>
+            <div class="btn">
+              <a href="/pd"><button>LEARN PYTHON</button></a>
+            </div>
+          </div>
+          <div class="example" style="box-shadow: none">
+            <h4>PYTHON Example:</h4>
+            <div class="border-green">
+              <div>
+                <span style="color: black">
+                  <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                    </span> <span class="jskeywordcolor" style="color:mediumblue">if</span> <span class="jsnumbercolor"
+                      style="color:red">5</span> &gt; <span class="jsnumbercolor" style="color:red">2</span>:<br>&nbsp;
+                    print(<span class="jsstringcolor" style="color:brown">"Five is greater than two!"</span>)<span
+                      class="jsnumbercolor" style="color:red">
+                    </span> </span>
+              </div>
+            </div>
+            <a href="/p" role="btn"><button>Try it by Yourself</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

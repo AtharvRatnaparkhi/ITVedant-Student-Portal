@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'assets/css/as.css' %}" />
+    <script>
+        function getcode() {
+            var codeid = document.getElementById('code');
+            var solid = document.getElementById('solution');
+            //alert(codeid.value);
+            solid.innerHTML = codeid.value;
+
+        } 
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/hd">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cd">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pd">PYTHON</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <div class="container">
+        <h1>
+            <marquee style="color:red;">Welcome to CSS tutorial</marquee>
+        </h1>
+        <button onclick="getcode()">RUN</button>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-6">
+                <textarea id="code" rows="28" cols="70" placeholder="Enter Html code here"></textarea>
+            </div>
+
+            <div class="col-md-6" id="solution"
+                style="background-color: aliceblue; border-radius: 10%; border-color: black;">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
